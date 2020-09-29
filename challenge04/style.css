@@ -39,17 +39,33 @@ h1 {
     margin: 0 auto;
 }
 
+.container--full-width {
+    width: 100%;
+    max-width: 100%;
+}
+
+.container-background-wrapper {
+    background: #23424A;
+}
+
 .row {
     /* display: flex => flex container */
     display: flex;
 
     /* can't use yet */
     /* gap: 100px; */
+
+    text-align: center;
+    padding: 3em 0;
 }
 
 .col {
     /* these are now flex items */
     width: 100%;
+}
+
+.col + .col {
+    margin-left: 1.25em;
 }
 
 .hero {
@@ -80,4 +96,21 @@ h1 {
 .btn:hover,
 .btn:focus {
     opacity: .75; 
+}
+
+.article {
+    color: #3A3A3A;
+}
+
+.article--colorized {
+    color: #fff;
+    background-color: #23424A;
+}
+
+.article__headline {
+    color: #87629A;
+}
+
+.article--colorized .article__headline {
+    color: #fff;
 }
